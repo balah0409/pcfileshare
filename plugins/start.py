@@ -87,10 +87,7 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🌐 𝐌𝐨𝐯𝐢𝐞 𝐆𝐫𝐨𝐮𝐩 🌐", url = "https://t.me/pcmoviegroup")],
                     InlineKeyboardButton("📡 𝐂𝐡𝐚𝐧𝐧𝐞𝐥  📡", url = "https://t.me/pcott"),
-                    InlineKeyboardButton("👑 𝐀𝐝𝐦𝐢𝐧 👑" , url = "https://t.me/PCADMINOFFICIALBOT")
-                ]
-            ]
-        )
+                    InlineKeyboardButton("👑 𝐀𝐝𝐦𝐢𝐧 👑" , url = "https://t.me/PCADMINOFFICIALBOT")]]))                               ]
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
